@@ -5,22 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Counter</title>
-    <link rel="stylesheet" href="index.css" type="text/css"/>
+    <link rel="stylesheet" href="index.css" type="text/css" />
   </head>
   <body>
     <div class="container">
       <h1 id="counter-header">counter</h1>
       <span class="counter">0</span>
+
       <div class="buttons-group">
-        <button class="button" id="increase-button">
-          increase
-        </button>
-        <button class="button" id="reset-button">
-          reset
-        </button>
-        <button class="button" id="decrease-button">
-          decrease
-        </button>
+        <button class="button" id="decrease-button">decrease</button>
+        <button class="button" id="reset-button">reset</button>
+        <button class="button" id="increase-button">increase</button>
+      </div>
+      <div>
+        <select id="step-select" style="width: 100%;">
+          <option value="0" selected>Please select your step counter:</option>
+          <option value="1" id="step-one">1</option>
+          <option value="3" id="step-three">3</option>
+          <option value="5" id="step-five">5</option>
+          <option value="10" id="step-ten">10</option>
+        </select>
       </div>
     </div>
     <script src="index.js"></script>

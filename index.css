@@ -15,6 +15,14 @@ h1 {
   margin: 0;
   margin-bottom: 30px;
   text-transform: uppercase;
+  font-weight: 400;
+}
+
+h2 {
+  color: rgb(23, 21, 21);
+  margin: 20px;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 .buttons-group {
@@ -22,13 +30,13 @@ h1 {
 }
 
 .button {
-  padding: 15px;
+  padding: 8px;
   border: 2px solid rgb(23, 21, 21);
   background-color: transparent;
   border-color: rgb(23, 21, 21);
   border-radius: 7px;
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 10px;
+  font-weight: 600;
   text-transform: uppercase;
   color: rgb(23, 21, 21);
   cursor: pointer;
@@ -48,9 +56,57 @@ h1 {
 .container {
   display: inline-block;
   text-align: center;
+  padding: 50px;
 }
 
 .counter {
-  font-size: 50px;
+  font-size: 80px;
+  font-weight: 400;
   color: rgb(23, 21, 21);
 }
+
+#step-select {
+  position: relative;
+  font-size: 12px;
+  width: 100%;
+  padding: 8px;
+  background-color: transparent;
+  outline: none;
+  border-color: rgb(23, 21, 21);
+  border-radius: 7px;
+  border-width: 2px;
+  text-align: center;
+  box-shadow: none;
+  margin-top: 15px;
+}
+
+#step-select select {
+  display: none;
+}
+
+.select-selected {
+  background-color: rgb(23, 21, 21);
+  color: rgb(225, 190, 158);
+}
+
+.select-items {
+  position: absolute;
+  background-color: rgb(23, 21, 21);
+  color: rgb(225, 190, 158);
+  
+}
+
+.select-hide {
+  display: none;
+}
+
+/* #step-select:hover {
+  background-color: rgb(23, 21, 21);
+  color: rgb(225, 190, 158);
+  box-shadow: none;
+} */
+
+/* #step-select:focus {
+  border-color: rgb(23, 21, 21);
+  box-shadow: none;
+} */
